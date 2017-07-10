@@ -1,0 +1,157 @@
+@charset "utf-8";
+html, body  {
+    min-height: 100%;
+    overflow: auto;
+}
+body  {
+    background-color: #C43F3F; /*#BA3333;*/
+    font-family: 'Roboto', sans-serif;
+    font-size:100%;
+    margin:0;
+}
+*  {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+header, main, footer  {
+    display: block;
+}
+/*The wraper of the content of the site*/
+#wraper  {
+    max-width: 2400px;
+    width: 100%;
+}
+/*Header*/
+header  {
+    border-bottom: 1px solid #000000;
+}
+header h1 {
+    color: #000000;
+    font-style: italic;
+    text-align: center;
+}
+/*Main part of the site*/
+main  {
+    padding-bottom: 100px;
+    overflow-x: hidden;
+}
+main form  {
+    -webkit-box-shadow: 4px 4px 5px 4px #000000;
+    -moz-box-shadow: 4px 4px 5px 4px #000000;
+    box-shadow: 4px 4px 5px 4px #000000;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+}
+form input[type=text]  {
+    background-repeat: no-repeat;
+    background-position: 10px 15px;
+    border: none;
+    -webkit-box-shadow: 1px 1px 10px #000000;
+    -moz-box-shadow: 1px 1px 10px #000000;
+    box-shadow: 1px 1px 10px #000000;
+    font-size: 1.2em;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: absolute;
+    left: 1px;
+    top: 50px;
+    width: 90%;
+    z-index: 2;
+}
+form input[name=username]  {
+    background-image: url('../img/profile.png');
+    padding-left: 40px;
+}
+form input[name=email]  {
+    background-image: url('../img/email.png');
+    display: none;
+    padding-left: 60px;
+}
+form input[name="passwort"]  {
+    background-image: url('../img/key.png');
+    display: none;
+    padding-left: 50px;
+}
+form img  {
+    position: absolute;
+    left: 92%;
+    top: 65px;
+    z-index: 1;
+}
+form img:nth-child(4)  {
+    display: none;
+}
+form img:nth-child(6)  {
+    display: none;
+}
+form .ready-submit  {
+    background-color: lightGray;
+    border: 1px solid #000000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; /*Standard syntax*/
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    padding-top: 25px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+}
+form input[type=submit]  {
+    background-color: #ACA5A5;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; /*Standard syntax*/
+    height: 20px;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    z-index: 1;
+}
+form p  {
+    display: none;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+}
+div.ready-submit i  {
+    color: green;
+    margin-top: 0;
+}
+footer p  {
+    font-style: italic;
+    text-align: center;
+}
+@media only screen and (min-width: 321px){
+main form  {
+    padding-bottom: 200px;
+    padding-top: 20px;
+    width: 300px;
+}
+form input[type=text]  {
+    left: 10px;
+}
+form img  {
+    left: 270px;
+}
+form input[type=text]  {
+    width: 250px;
+}
+form .ready-submit  {
+    left: 25px; 
+    width: 250px;
+}
+}
